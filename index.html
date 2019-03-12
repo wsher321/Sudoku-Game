@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sudoku Puzzle</title>
+</head>
+
+<body>
+    <div id="grid">
+        <header>
+            <h1>Sudoku Puzzle</h1>
+        </header>
+        <aside class="left-col">
+            <h2>Difficulty Level</h2>
+            <ul>
+                <li><button onclick="LoadPuzzle(1)">Easy</button></li>
+                <li><button onclick="LoadPuzzle(2)">Medium</button></li>
+                <li><button onclick="LoadPuzzle(3)">Hard</button></li>
+            </ul>
+        </aside>
+        <div class="central-col">
+            <div class="puzzle">
+                <div class="cell"><input type="text" name="" id="1" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="2" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="3" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="4" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="5" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="6" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="7" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="8" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="9" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+            </div>
+            <div class="puzzle">
+                <div class="cell"><input type="text" name="" id="10" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="11" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="12" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="13" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="14" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="15" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="16" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="17" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="18" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+            </div>
+            <div class="puzzle">
+                <div class="cell"><input type="text" name="" id="19" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="20" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="21" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="22" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="23" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="24" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="25" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="26" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="27" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+            </div>
+            <div class="puzzle">
+                <div class="cell"><input type="text" name="" id="28" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="29" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="30" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="31" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="32" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="33" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="34" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="35" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="36" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+            </div>
+            <div class="puzzle">
+                <div class="cell"><input type="text" name="" id="37" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="38" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="39" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="40" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="41" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="42" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="43" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="44" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="45" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+            </div>
+            <div class="puzzle">
+                <div class="cell"><input type="text" name="" id="46" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="47" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="48" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="49" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="50" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="51" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="52" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="53" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="54" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+            </div> 
+            <div class="puzzle">
+                <div class="cell"><input type="text" name="" id="55" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="56" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="57" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="58" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="59" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="60" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="61" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="62" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="63" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+            </div>
+            <div class="puzzle">
+                <div class="cell"><input type="text" name="" id="64" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="65" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="66" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="67" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="68" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="69" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="70" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="71" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="72" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+            </div>
+            <div class="puzzle">
+                <div class="cell"><input type="text" name="" id="73" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="74" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="75" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="76" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="77" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="78" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="79" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="80" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+                <div class="cell"><input type="text" name="" id="81" tabindex="1" onblur="CheckValue(this)"	onfocus="getID(this.id)"></div>
+            </div> 
+            <button onclick="Reload();">Reset</button>
+            <button onclick="CheckCell();">Check</button>
+        </div>
+        <aside class="right-col">
+            <h2>Font Size</h2>
+            <ul>
+                <li><button type="button" id="increase" onclick="increaseFont()">Zoom +</button></li>
+                <li><button type="button" id="decrease" onclick="decreaseFont()">Zoom -</button></li>
+                <li><button type="button" id="reset" onclick="resetFont()">Reset</button></li>
+            </ul>
+            <h2>Color Contrast</h2>
+            <ul>
+                <li><button onclick="light()">Light</button></li>
+                <li><button onclick="highContrast()">Contrast</button></li>
+                <li><button onclick="defaultTheme()">Default</button></li>
+            </ul>
+        </aside>
+        <footer>
+            <p>Date:<span id="date"></span>Time: <span id="time"></span>Last Modified: <span id="last-update"></span></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
