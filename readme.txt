@@ -1,4 +1,6 @@
-<h3>Sudoku Assignment</h3>
+Sudoku Assignment
+
+
 Sudoku is a logic puzzle played on a 9 x 9 square grid that is also viewed nine 3 x 3 regions. The usual layout of the grid is illustrated below. The puzzle starts with some cells filled in. The objective is to fill in the remaining cells so that each row, each column, and each of the outlined 3 x 3 blocks contain a permutation of the numbers 1 through 9. A more detailed description of the puzzle can be found in the Wikipedia article on Sudoku. A Google search will provide many additional links on the subject.
 
 You are not required to provide a solution for the Sodoku game, or even know how to play Sudoku to do this assignment. You only need to understand the basic rules as described above, and provide a prototype that enables input and result checking.
